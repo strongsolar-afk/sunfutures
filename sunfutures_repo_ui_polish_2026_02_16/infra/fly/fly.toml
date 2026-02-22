@@ -1,0 +1,24 @@
+# Fly.io app config (edit app name after `fly launch`)
+app = "sunfutures-api"
+primary_region = "lax"
+
+[build]
+  dockerfile = "Dockerfile"
+
+[env]
+  SUNFUTURES_UPLOAD_DIR = "/app/data/uploads"
+  # SUNFUTURES_API_KEY = "set-a-secret-key"
+  # SUNFUTURES_CORS_ORIGINS = "https://yourdomain.com"
+  # SUNFUTURES_USER_AGENT = "SunFutures/0.3 (contact: ops@yourdomain.com)"
+
+[[mounts]]
+  source = "uploads"
+  destination = "/app/data"
+
+[http_service]
+  internal_port = 8080
+  force_https = true
+  auto_start_machines = true
+  auto_stop_machines = true
+  min_machines_running = 0
+

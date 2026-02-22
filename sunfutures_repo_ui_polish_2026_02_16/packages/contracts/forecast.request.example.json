@@ -1,0 +1,31 @@
+{
+  "location": {
+    "name": "Example Site",
+    "lat": 36.1699,
+    "lon": -115.1398,
+    "elevation_m": 610
+  },
+  "plant": {
+    "plant_name": "Example Plant",
+    "dc_capacity_kw": 250000,
+    "ac_capacity_kw": 200000,
+    "mounting": "SAT",
+    "tilt_deg": null,
+    "azimuth_deg": null,
+    "gcr": 0.35,
+    "max_tracker_angle_deg": 60,
+    "backtracking": true,
+    "poi_limit_kw": null
+  },
+  "losses": {
+    "soiling_pct": 2.0,
+    "snow_pct": 0.0,
+    "mismatch_pct": 1.5,
+    "dc_wiring_pct": 1.0,
+    "ac_wiring_pct": 0.5,
+    "iam_pct": 2.0,
+    "aux_pct": 0.5,
+    "availability_pct": 99.0
+  },
+  "equipment_files": []
+}

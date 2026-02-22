@@ -1,0 +1,30 @@
+{
+  "expo": {
+    "name": "SunFutures",
+    "slug": "sunfutures",
+    "version": "0.1.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "automatic",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.sunfutures.app",
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "SunFutures uses your location to select the PV plant site for forecasting."
+      }
+    },
+    "plugins": [
+      [
+        "expo-location",
+        {
+          "locationWhenInUsePermission": "Allow SunFutures to access your location to select the PV plant site."
+        }
+      ]
+    ]
+  }
+}
